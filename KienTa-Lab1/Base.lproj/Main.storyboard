@@ -113,36 +113,54 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="JPY"/>
+                                <connections>
+                                    <action selector="btnCurrencyDetect:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8n2-6S-iEN"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Klc-Tp-3aI">
                                 <rect key="frame" x="249" y="601" width="56" height="23"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="GBP"/>
+                                <connections>
+                                    <action selector="btnCurrencyDetect:" destination="BYZ-38-t0r" eventType="touchUpInside" id="S7w-SJ-jx1"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MRG-Fi-767">
                                 <rect key="frame" x="70" y="603" width="56" height="23"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="EUR"/>
+                                <connections>
+                                    <action selector="btnCurrencyDetect:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fE2-RS-DM1"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ubf-eA-NPJ">
                                 <rect key="frame" x="70" y="634" width="56" height="23"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="AUD"/>
+                                <connections>
+                                    <action selector="btnCurrencyDetect:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lBs-ct-6oD"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n3Z-64-YK7">
-                                <rect key="frame" x="158" y="634" width="56" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <state key="normal" title="VND"/>
-                            </button>
-                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BHI-iJ-cN5">
-                                <rect key="frame" x="255" y="626" width="45" height="39"/>
+                                <rect key="frame" x="158" y="626" width="56" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="CAD"/>
+                                <connections>
+                                    <action selector="btnCurrencyDetect:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YbG-Jc-8vb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BHI-iJ-cN5">
+                                <rect key="frame" x="256" y="626" width="44" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="CHF"/>
+                                <connections>
+                                    <action selector="btnCurrencyDetect:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QnB-sE-Lqw"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Final converted price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L0P-Ef-QbF">
                                 <rect key="frame" x="111" y="691" width="161" height="21"/>
@@ -173,6 +191,7 @@
                         <outlet property="changeDiscount" destination="saY-Hz-MTp" id="tBH-Ga-FT2"/>
                         <outlet property="changePrice" destination="x4B-a3-7gn" id="BUv-5N-0ib"/>
                         <outlet property="changeTax" destination="XdN-cp-8Rn" id="mfL-15-bt8"/>
+                        <outlet property="convertedPrice" destination="61U-10-kqo" id="YtE-xc-6ku"/>
                         <outlet property="discount" destination="MbZ-nV-5Gj" id="fJr-g4-kHI"/>
                         <outlet property="finalPrice" destination="B2A-KX-nbE" id="Jzv-Qd-EJt"/>
                         <outlet property="originalPrice" destination="tok-p5-mn5" id="xJs-8c-9h8"/>

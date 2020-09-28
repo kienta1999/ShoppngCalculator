@@ -104,5 +104,16 @@ class ViewController: UIViewController {
         updateFinalPrice()
     }
     
+    var usdToCurrency = [0.86, 105.32, 0.77, 1.42, 1.34, 0.93]
+    var currecySign = ["€", "¥", "£", "A$", "C$", "Fr."]
+    
+    @IBOutlet weak var convertedPrice: UILabel!
+    
+    @IBAction func btnCurrencyDetect(_ sender: UIButton) {
+        var convertedPriceVal = finalPriceVal * usdToCurrency[sender.tag]
+        convertedPrice.text = "\(currecySign[sender.tag])\(String(format: "%.2f", convertedPriceVal))"
+        
+    }
+    
 }
 
