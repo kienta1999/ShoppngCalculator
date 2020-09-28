@@ -15,6 +15,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var tax: UITextField!
     @IBOutlet weak var finalPrice: UILabel!
     
+    
+    @IBOutlet weak var changePrice: UIStepper!
+    @IBOutlet weak var changeDiscount: UIStepper!
+    @IBOutlet weak var changeTax: UIStepper!
+    
+    
     var originalPriceVal:Double = 0
     var discountVal:Double = 0
     var taxVal:Double = 0
@@ -26,9 +32,9 @@ class ViewController: UIViewController {
     
     @IBAction func originalPriceEdited(_ sender: Any) {
         originalPriceVal = stringOptionalToDouble(str:originalPrice.text)
-        finalPriceVal = calculatePrice(price: originalPriceVal, discount: discountVal, tax: taxVal)
-        finalPrice.text = "$\(String(format: "%.2f", finalPriceVal))"
-//        print(finalPriceVal)
+        updateFinalPrice()
+        changePrice.value = originalPriceVal;
+        
     }
     @IBAction func discountEdited(_ sender: Any) {
         discountVal = stringOptionalToDouble(str:discount.text)
@@ -36,16 +42,16 @@ class ViewController: UIViewController {
             discountVal = 100
             discount.text = "100"
         }
-        finalPriceVal = calculatePrice(price: originalPriceVal, discount: discountVal, tax: taxVal)
-        finalPrice.text = "$\(String(format: "%.2f", finalPriceVal))"
+        updateFinalPrice()
+        changeDiscount.value = discountVal;
 //        print(finalPriceVal)
     }
     
     @IBAction func taxEdited(_ sender: Any) {
         taxVal = stringOptionalToDouble(str:tax.text)
-        finalPriceVal = calculatePrice(price: originalPriceVal, discount: discountVal, tax: taxVal)
-        finalPrice.text = "$\(String(format: "%.2f", finalPriceVal))"
+        updateFinalPrice()
 //        print(finalPriceVal)
+        changeTax.value = taxVal;
     }
     
     
@@ -75,6 +81,27 @@ class ViewController: UIViewController {
     }
     func calculatePrice(price: Double, discount: Double, tax: Double) -> Double {
         return price * (1 - discount / 100) * (1 + tax / 100)
+    }
+    func updateFinalPrice(){
+        finalPriceVal = calculatePrice(price: originalPriceVal, discount: discountVal, tax: taxVal)
+        finalPrice.text = "$\(String(format: "%.2f", finalPriceVal))"
+    }
+    
+    
+    @IBAction func changPriceAction(_ sender: UIStepper) {
+        if(sender.tag == 0){
+            originalPrice.text = "\(String(changePrice.value))";
+            originalPriceVal = changePrice.value;
+        }
+        else if(sender.tag == 1){
+            discount.text = "\(String(changeDiscount.value))";
+            discountVal = changeDiscount.value;
+        }
+        else {
+            tax.text = "\(String(changeTax.value))";
+            taxVal = changeTax.value;
+        }
+        updateFinalPrice()
     }
     
 }
