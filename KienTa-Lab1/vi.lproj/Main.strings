@@ -1,0 +1,54 @@
+
+/* Class = "UILabel"; text = "Discount %"; ObjectID = "480-LX-lNZ"; */
+"480-LX-lNZ.text" = "Giảm giá %";
+
+/* Class = "UILabel"; text = "Original Price"; ObjectID = "4O5-Zy-wdQ"; */
+"4O5-Zy-wdQ.text" = "Giá gốc";
+
+/* Class = "UILabel"; text = "Choose currency to see"; ObjectID = "61U-10-kqo"; */
+"61U-10-kqo.text" = "Chọn loại tiền để thấy giá";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "B2A-KX-nbE"; */
+"B2A-KX-nbE.text" = "0";
+
+/* Class = "UIButton"; normalTitle = "CHF"; ObjectID = "BHI-iJ-cN5"; */
+"BHI-iJ-cN5.normalTitle" = "CHF";
+
+/* Class = "UILabel"; text = "My shopping calculator"; ObjectID = "Dq4-DA-j0X"; */
+"Dq4-DA-j0X.text" = "Máy tính tiền mua sắm";
+
+/* Class = "UILabel"; text = "Final Price (USD)"; ObjectID = "Hhh-0u-x4S"; */
+"Hhh-0u-x4S.text" = "Giá cuối (USD)";
+
+/* Class = "UIButton"; normalTitle = "GBP"; ObjectID = "Klc-Tp-3aI"; */
+"Klc-Tp-3aI.normalTitle" = "GBP";
+
+/* Class = "UILabel"; text = "Final converted price"; ObjectID = "L0P-Ef-QbF"; */
+"L0P-Ef-QbF.text" = "Giá sau khi đổi ngoại tệ";
+
+/* Class = "UIButton"; normalTitle = "EUR"; ObjectID = "MRG-Fi-767"; */
+"MRG-Fi-767.normalTitle" = "EUR";
+
+/* Class = "UITextField"; text = "0"; ObjectID = "MbZ-nV-5Gj"; */
+"MbZ-nV-5Gj.text" = "0";
+
+/* Class = "UIButton"; normalTitle = "AUD"; ObjectID = "Ubf-eA-NPJ"; */
+"Ubf-eA-NPJ.normalTitle" = "AUD";
+
+/* Class = "UIButton"; normalTitle = "JPY"; ObjectID = "W0E-du-arl"; */
+"W0E-du-arl.normalTitle" = "JPY";
+
+/* Class = "UILabel"; text = "Tax %"; ObjectID = "XnS-xn-dYB"; */
+"XnS-xn-dYB.text" = "Thuế %";
+
+/* Class = "UIButton"; normalTitle = "CAD"; ObjectID = "n3Z-64-YK7"; */
+"n3Z-64-YK7.normalTitle" = "CAD";
+
+/* Class = "UITextField"; text = "0"; ObjectID = "tok-p5-mn5"; */
+"tok-p5-mn5.text" = "0";
+
+/* Class = "UITextField"; text = "0"; ObjectID = "u1g-bU-AGz"; */
+"u1g-bU-AGz.text" = "0";
+
+/* Class = "UILabel"; text = "Choose your currency"; ObjectID = "ycm-iV-qj9"; */
+"ycm-iV-qj9.text" = "Chọn loại tiền";
